@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Surprise! 🎈</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="blur-in-start">
+
+  <div id="floating-bg"></div>
+
+  <canvas id="party-canvas"></canvas>
+
+  <!-- titik navigasi kecil di atas: halaman 4 dari 4 -->
+  <nav class="page-nav">
+    <a href="index.html"></a>
+    <a href="gallery.html"></a>
+    <a href="letter.html"></a>
+    <a href="surprise.html" class="active"></a>
+  </nav>
+
+  <!-- ================================================================
+       HALAMAN 4 — BALLOON POP GAME & BIRTHDAY REVEAL
+  ================================================================= -->
+  <section id="balloon-page" class="page">
+    <div class="balloon-ui" id="balloonUI">
+      <h2 class="balloon-heading">pop the balloons! 🎈</h2>
+      <p class="balloon-sub">tap them before they fly away!</p>
+      <p class="balloon-counter" id="balloonCounter">0 / 10</p>
+    </div>
+
+    <div class="balloon-arena" id="balloonArena"></div>
+
+    <div class="birthday-reveal" id="birthdayReveal">
+      <h1 class="reveal-title">Happy Birthday</h1>
+      <h1 class="reveal-name">VAISH!</h1>
+      <div class="reveal-buttons">
+        <a href="letter.html" class="nav-btn secondary">&lt; back</a>
+        <button class="nav-btn" id="replayBtn">play again 🎈</button>
+      </div>
+    </div>
+
+    <div class="page-buttons balloon-back">
+      <a href="letter.html" class="nav-btn secondary">&lt; back</a>
+    </div>
+  </section>
+
+  <script src="js/script.js"></script>
+  <script src="js/balloon.js"></script>
+</body>
+</html>
